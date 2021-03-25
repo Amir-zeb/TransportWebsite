@@ -1,0 +1,424 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tsstylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <title>ABCbusses</title>
+</head>
+<body>
+  <header class="col"> 
+    <div class="row bgcolor">
+      <div class="container pt-2">
+        <div class="col-md-6 col-sm-12 floatLeft">
+          <div class="textCenter">
+            <ul>
+              <a href="#" class="icon"><li class="fa fa-envelope icon"></li>CONTACT@abcbusses.com</a>
+            </ul>   
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 floatRight">
+          <div class="textCenter textRight">
+            <ul>
+              <a href="#"><li class="fab fa-facebook icon"></li></a>
+              <a href="#"><li class="fab fa-twitter icon"></li></a>
+              <a href="#"><li class="fab fa-instagram icon"></li></a>
+              <a href="#"><li class="fab fa-whatsapp icon"></li></a>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+      <div class="row nav-bgcolor">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+              <a href="transportsite.html"><img src="images/abcbusses.png" alt="logo" width="100px"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapsiblenavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="colapsiblenavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="transportsite.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="busesnews.html">Buses News</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tsaboutus.html">About Us</a></li>
+
+                    <!--
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">INFORMATIONS</a>
+                      <ul class="list-inline dropdown-menu">
+                        <li class="nav-item"><a class="nav-link" href="#">BUSES NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">BUSES TIMING</a></li>
+                      </ul>
+                    </li>
+                    -->
+                    
+                    <li class="nav-item"><a class="nav-link" href="tscontactus.html">Contact Us</a></li>                                
+                </ul>
+                <div class="mrg">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" type="button" class="btn lgbtn" data-toggle="modal" data-target="#login-modal">LogIn</a></li> 
+                </ul> 
+                </div>
+
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+</header>
+  <!--Carousal-->
+  <section>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/bus3.jpg" alt="Los Angeles" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="images/bus1.jpg" alt="Chicago" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="images/bus2.jpg" alt="New York" width="1100" height="500">
+        </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+  </section>
+
+  
+ <!-- Log-in Form -->
+ <div class="modal" id="login-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">LogIn</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body m-5">
+          <label class="col-form-label">Email</label> 
+          <input class="form-control " type="email" placeholder="Enter Email"> 
+          <label class="col-form-label" for="">Password</label> 
+          <input class="form-control" type="password" name="pass" placeholder="Enter Password">
+          <a type="button" class="crbtn" data-dismiss="modal" data-toggle="modal" data-target="#signup-modal">Create an Account</a>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <input class="btn subbtn bg-primary text-light" type="submit" value="LogIn">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- signup form -->
+  <div class="modal" id="signup-modal" width="500px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">SignUp</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="form-group row">
+            <label class="col-form-label col-md-3 col-sm-12" class="">Name</label>
+            <input class="form-control col-md-3 col-sm-12 mr-md-2" type="text" placeholder="First Name">
+            <input class="form-control col-md-3 col-sm-12 mb-sm-2" type="text" placeholder="Last Name">
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-form-label col-md-3 col-sm-12">Email</label>
+            <input class="form-control col-md-3 col-sm-12" type="email" name="" id="" placeholder="Enter Email">
+          </div>
+          
+          <div class="form-group row">
+            <label for="" class="col-form-label col-md-3 col-sm-12">Password</label>
+            <input class="form-control col-md-3 col-sm-12" type="password" name="" id="" placeholder="Enter Password">
+          </div>
+          
+          <div class="form-group row">
+            <label for="" class="col-form-label col-md-3 col-sm-12">Comfirm Password</label>
+            <input class="form-control col-md-3 col-sm-12" type="password" name="" id="" placeholder="Confirm Password">
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <input class="btn subbtn bg-primary text-light" type="submit" value="SignUp">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <section class="wrapper">
+      <section class="card-row bg-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card1">
+                <h4>Pakistan Only</h4>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card2">
+                <h4>Updated News</h4>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card3">
+                <h4>24/7 Customer Care</h4>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+        
+      <div class="container bg-light pt-5 pb-5">
+          
+          <div class="row">
+            <form class="col-12">
+              <div class="container">
+                <div class="form-group row">
+                  <select name="" id="" class="form-control marg col-md-3 col-sm-12 offset-md-1">
+                    <option>From</option>
+                    <option value="">Sukkur</option>
+                    <option value="">NawabShah</option>
+                    <option value="">Hyderabad</option>
+                    <option value="">Karachi</option>
+                    <option value="">Thatta</option>
+                    <option value="">Khairpur</option>
+                    <option value="">Badin</option>
+                  </select>
+                  <select name="" id="" class="form-control marg col-md-3 col-sm-12">
+                    <option>To</option>
+                    <option value="">Sukkur</option>
+                    <option value="">NawabShah</option>
+                    <option value="">Hyderabad</option>
+                    <option value="">Karachi</option>
+                    <option value="">Thatta</option>
+                    <option value="">Khairpur</option>
+                    <option value="">Badin</option>
+                  </select>
+                  <input class="form-control col-md-2 marg col-sm-12" type="date" name="" id="">
+                  <a class="btn subbtn bg-primary col-md-2 marg col-sm-12 text-light" href="bookticket.html" type="submit">Book Ticket</a>              
+                </div>
+              </div>
+          </form>
+      </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h4 class="text-center">Information</h4>
+              <hr width="50%" style="margin: auto;">
+              <p class="text-justify pt-3 col-md-10 offset-md-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed nunc ullamcorper, laoreet magna at, porttitor nibh. Aenean mollis ex eget convallis auctor. Nullam egestas lorem et libero aliquam bibendum. Donec dignissim orci sit amet vehicula eleifend. Praesent pellentesque magna nunc, eget finibus risus blandit eget. Suspendisse potenti. Maecenas ut diam magna. Cras eu elit lorem. Duis interdum massa vel hendrerit ornare. Pellentesque pharetra scelerisque purus ac auctor. Proin ante leo, gravida a est in, euismod porttitor lectus. Curabitur nec metus mi.<br>
+                
+                Suspendisse sed tortor vitae magna rhoncus viverra at sed diam. Nam scelerisque odio sapien, in lobortis augue rutrum nec. Maecenas aliquam ante id ornare molestie. Sed lorem orci, faucibus id vestibulum eget, luctus eget mauris. Cras auctor rhoncus neque, non placerat est interdum at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam quis ullamcorper massa. Sed vehicula, purus a ultricies tincidunt, massa ante porta erat, eu iaculis metus purus vel libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum non velit at magna condimentum tempus in ut urna. Fusce et neque in leo fringilla gravida ut sed mi. Curabitur nec laoreet risus. Fusce finibus ligula eget semper scelerisque.<br>
+                
+                Aliquam tincidunt ac erat sit amet finibus. Vivamus vulputate pharetra dignissim. In sed laoreet nulla. Duis luctus et est a feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia faucibus est, id fringilla turpis imperdiet et. Morbi et erat ante.<br>
+                
+                In imperdiet dictum ligula, et pellentesque diam volutpat at. Phasellus non faucibus felis, in suscipit risus. Praesent ultricies sagittis justo, ut efficitur ante. Ut vitae blandit ipsum. Aliquam erat volutpat. Sed quis ornare tellus, sed mattis lacus. Mauris tempus vehicula ipsum.<br>
+                
+                Donec interdum pharetra sem, eu bibendum nibh pretium eget. Nam quis nibh sem. Ut id pharetra tellus. Pellentesque bibendum, ipsum et porttitor ornare, ligula erat vulputate est, a vulputate augue eros id urna. Ut a venenatis elit. Fusce eget dictum lacus, eu lacinia dui. Sed pellentesque aliquam erat at hendrerit.<br>
+              </p>
+            </div>
+          </div>          
+
+        </div>
+
+        
+    </section>
+    
+    <footer style="border:1px solid rgba(29, 71, 69, 0.5);">
+        <div class="container">
+            <section>
+                <div class="row pt-5">
+                    <div class="col-md-6 col-sm-12">
+                        <h4><b>QUICK LINKS</b></h4>
+                        <hr class="hr">
+                        <ul class="navbar-nav ">
+                            <li><a href="transportsite.html">Home</a></li>
+                            <li><a href="tsaboutus.html">About Us</a></li>
+                            <li><a href="tsfaq.html">FAQ's</a></li>
+                            <li><a href="tspripolicy.html">Privacy Policy</a></li>
+                            <li><a href="tsppolicy.html">Purchase Policy</a></li>
+                            <li><a href="tscontactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h4><b>Follow Us</b></h4>
+                        <hr class="hr">
+                        <ul>
+                            <a href="#"><li class="fab fa-facebook icon"></li></a>
+                            <a href="#"><li class="fab fa-twitter icon"></li></a>
+                            <a href="#"><li class="fab fa-instagram icon"></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+              <hr class="hr2">
+                <div class=" bgcolor">
+                    <p class="text-center">Copyright © 2020 ABC Buses | All Rights Reserved.</p>
+                </div>
+            </section>
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+          <!-- <div class="row pt-5">
+            <h4 class="text-center col-12">Purchase Ticket</h4>
+              <form class="col-12">
+                <div class="form-group row p-3">
+                  <select name="" id="" class="form-control col-md-3 col-sm-12 offset-md-1">
+                    <option>From</option>
+                    <option value="">Sukkur</option>
+                    <option value="">NawabShah</option>
+                    <option value="">Hyderabad</option>
+                    <option value="">Karachi</option>
+                    <option value="">Thatta</option>
+                    <option value="">Khairpur</option>
+                    <option value="">Badin</option>
+                  </select>
+                  <select name="" id="" class="form-control col-md-3 col-sm-12">
+                    <option>To</option>
+                    <option value="">Sukkur</option>
+                    <option value="">NawabShah</option>
+                    <option value="">Hyderabad</option>
+                    <option value="">Karachi</option>
+                    <option value="">Thatta</option>
+                    <option value="">Khairpur</option>
+                    <option value="">Badin</option>
+                  </select>
+                  <input class="form-control col-md-4 col-sm-12" type="date" name="" id="">
+                </div>
+
+
+                <div class="form-group row justify-content-center pb-3">    
+                  <h4 class="col-12 text-center">Timing</h4>                           
+                  <div class="form-check">
+                    <label class="form-check-label" for="EarlyMorning">
+                    <input class="form-check-input" type="radio" name="yesno" id="EarlyMorning">Early Morning</label>
+                  </div>
+                  <div class="form-check">
+                      <label class="form-check-label" for="Morning">
+                      <input class="form-check-input" type="radio" name="yesno" id="Morning">Morning</label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" for="AfterNoon">
+                    <input class="form-check-input" type="radio" name="yesno" id="AfterNoon">Afternoon</label>
+                  </div>
+                  <div class="form-check">
+                      <label class="form-check-label" for="Evening">
+                      <input class="form-check-input" type="radio" name="yesno" id="Evening">Evening</label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" for="Night">
+                    <input class="form-check-input" type="radio" name="yesno" id="Night">Night</label>
+                  </div>
+              </div>
+
+
+
+                <div class="form-group">
+                  <h4 class="col-12 text-center pb-2">Available Seats</h4>
+                  <div class="grid-container">
+                    <div class="item1">1<input type="checkbox" name="" id=""></div>
+                    <div class="item1">5<input type="checkbox" name="" id=""></div>
+                    <div class="item1">9<input type="checkbox" name="" id=""></div>
+                    <div class="item1">13<input type="checkbox" name="" id=""></div>
+                    <div class="item1">17<input type="checkbox" name="" id=""></div>
+                    <div class="item1">21<input type="checkbox" name="" id=""></div>
+                    <div class="item1">25<input type="checkbox" name="" id=""></div>
+                    <div class="item1">29<input type="checkbox" name="" id=""></div>
+                    <div class="item1">33<input type="checkbox" name="" id=""></div>
+                    <div class="item1">37<input type="checkbox" name="" id=""></div>
+                    <div class="item1">2<input type="checkbox" name="" id=""></div>
+                    <div class="item1">6<input type="checkbox" name="" id=""></div>
+                    <div class="item1">10<input type="checkbox" name="" id=""></div>
+                    <div class="item1">14<input type="checkbox" name="" id=""></div>
+                    <div class="item1">18<input type="checkbox" name="" id=""></div>
+                    <div class="item1">22<input type="checkbox" name="" id=""></div>
+                    <div class="item1">26<input type="checkbox" name="" id=""></div>
+                    <div class="item1">30<input type="checkbox" name="" id=""></div>
+                    <div class="item1">34<input type="checkbox" name="" id=""></div>
+                    <div class="item1">38<input type="checkbox" name="" id=""></div>
+                    <div class="item2"></div>
+                    <div class="item1">39<input type="checkbox" name="" id=""></div>
+                    <div class="item1">3<input type="checkbox" name="" id=""></div>
+                    <div class="item1">7<input type="checkbox" name="" id=""></div>
+                    <div class="item1">11<input type="checkbox" name="" id=""></div>
+                    <div class="item1">15<input type="checkbox" name="" id=""></div>
+                    <div class="item1">19<input type="checkbox" name="" id=""></div>
+                    <div class="item1">23<input type="checkbox" name="" id=""></div>
+                    <div class="item1">27<input type="checkbox" name="" id=""></div>
+                    <div class="item1">31<input type="checkbox" name="" id=""></div>
+                    <div class="item1">35<input type="checkbox" name="" id=""></div>
+                    <div class="item1">40<input type="checkbox" name="" id=""></div>
+                    <div class="item1">4<input type="checkbox" name="" id=""></div>
+                    <div class="item1">8<input type="checkbox" name="" id=""></div>
+                    <div class="item1">12<input type="checkbox" name="" id=""></div>
+                    <div class="item1">16<input type="checkbox" name="" id=""></div>
+                    <div class="item1">20<input type="checkbox" name="" id=""></div>
+                    <div class="item1">24<input type="checkbox" name="" id=""></div>
+                    <div class="item1">28<input type="checkbox" name="" id=""></div>
+                    <div class="item1">32<input type="checkbox" name="" id=""></div>
+                    <div class="item1">36<input type="checkbox" name="" id=""></div>
+                    <div class="item1">40<input type="checkbox" name="" id=""></div>
+                  </div>
+
+                  <div class="form-group row p-3">
+                    <input class="btn subbtn bg-primary text-light form-control" type="submit" value="Book Ticket">
+                  </div>
+                  
+                </div>
+              </form>
+
+          </div> -->
+
